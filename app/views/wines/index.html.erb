@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Wines</h3>
+
+
+
+  <div>
+    <% @wines.each do |wine| %>
+      <div class="col-md-4">
+        <h4 class="text-info"><%= wine.product %></h4>
+        <div><%= image_tag wine.picture, class: "img-responsive" %></div>
+        <h4 class="text-success"><%= wine.desc %></h4>
+        <h4 class="text-warning"><%= wine.age %></h4>
+        <%= link_to 'Show', wine, class: "btn btn-primary" %>
+        <%= link_to 'Edit', edit_wine_path(wine), class: "btn btn-info" %>
+        <%= link_to 'Destroy', wine, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+      </div>
+    <% end %>
+  </div>
+
+
+<br>
+
+<%= link_to 'New Wine', new_wine_path %>
