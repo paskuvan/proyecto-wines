@@ -14,7 +14,17 @@
  *= require_self
  */
 
-img {
-	max-width: 100px;
-	max-height: 0 auto;
+ body {
+ 	font-family: 'Cabin', sans-serif;
+ }
+
+h1{
+	text-align: center;
+	color: #d63031;
+	text-decoration: underline;
+}
+
+
+a:visited {
+  color: #dfe6e9;
 }
