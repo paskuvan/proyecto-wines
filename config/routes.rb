@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :cats
   get 'pages/contact'
 
   resources :wines
