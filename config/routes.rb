@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-	root to: “wines#index”
+
+  get 'pages/contact'
+
   resources :wines
   get 'pages/index'
 
