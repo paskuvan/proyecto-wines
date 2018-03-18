@@ -16,15 +16,18 @@
 
  body {
  	font-family: 'Cabin', sans-serif;
+ 	background-color: #651923;
  }
 
 h1{
 	text-align: center;
 	color: #d63031;
-	text-decoration: underline;
 }
-
 
 a:visited {
   color: #dfe6e9;
+}
+
+.nombre {
+	color: #ffffff;
 }

@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Vinos Chilenos</h1>
+<h1 class="nombre">Vinos Chilenos</h1>
 
 
 
   <div>
     <% @wines.each do |wine| %>
       <div class="col-md-4">
-        <h4 class="text-info"><%= wine.product %></h4>
+        <h4 class="nombre"><%= wine.product %></h4>
         <div><%= image_tag wine.picture, class: "img-responsive" %></div>
-        <h4 class="text-danger"><%= wine.desc %></h4>
-        <h4 class="text-danger"><%= wine.age %></h4>
+        <h4 class="nombre"><%= wine.desc %></h4>
+        <h4 class="nombre"><%= wine.age %></h4>
         <%= link_to 'Show', wine, class: "btn btn-success" %>
         <%= link_to 'Edit', edit_wine_path(wine), class: "btn btn-info" %>
         <%= link_to 'Destroy', wine, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
